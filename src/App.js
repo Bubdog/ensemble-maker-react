@@ -147,7 +147,9 @@ class App extends Component {
     this.bottom = React.createRef();
     this.shoes = React.createRef();
     this.clothing = GetSavedEnsembles();
-    this.state = { items: this.clothing.ensembles }
+    if (this.clothing) {
+      this.state = { items: this.clothing.ensembles }
+    }
     this.showCloset = false;
     this.ensembles = "";
   }
@@ -157,7 +159,7 @@ class App extends Component {
     this.forceUpdate();
   }
   viewCloset() {
-    this.ensembles = ShowEnsembles();
+    //this.ensembles = ShowEnsembles();
     this.showCloset = true;
     this.forceUpdate();
   }
@@ -223,37 +225,51 @@ class App extends Component {
       );
     }
     else {
-      let items = GetSavedEnsembles().ensembles;
-      return (
-        <div className="container horizontal_container">
+      let savedItems = GetSavedEnsembles();
+      if (savedItems == null) {
+        return (
+          <div className="container horizontal_container">
 
-          {React.createElement("h1", null, "Your Ensemble Closet")}
-          {React.createElement("p", null, "Here you have all of your outfits that you have saved. Imagine this to be your virtual closet!")}
-          <a className="backto right hvr-icon-wobble-horizontal" onClick={this.viewWizard}><i className="fa fa-arrow-left hvr-icon" aria-hidden="true"></i>Go back to Ensemble Maker</a>
-
-          <div className="closet" id="collections">
-            {items.map((item, i) =>
-              <div key={i} className="saved-outfit">
-                <div className="saved-top">
-                  <img src={item.top} alt="top"></img>
-                </div>
-
-                <div className="saved-bottom">
-                  <img src={item.bottoms} alt="bottoms"></img>
-                </div>
-
-                <div className="saved-shoes">
-                  <img src={item.shoes} alt="shoes"></img>
-                </div>
-                <a key={item.id} onClick={this.deleteItem.bind(this, item.id)} className="remove hvr-shutter-in-vertical">
-                  <i className="fa fa-times" id="deleteitem" aria-hidden="true"></i> Remove from Closet</a>
-
-              </div>
-            )}
+            {React.createElement("h1", null, "Your Ensemble Closet")}
+            {React.createElement("p", null, "Here you have all of your outfits that you have saved. Imagine this to be your virtual closet!")}
+            <a className="backto right hvr-icon-wobble-horizontal" onClick={this.viewWizard}><i className="fa fa-arrow-left hvr-icon" aria-hidden="true"></i>Go back to Ensemble Maker</a>
           </div>
+        )
+      }
+      else {
+        let items = savedItems.ensembles;
 
-        </div>
-      );
+        return (
+          <div className="container horizontal_container">
+
+            {React.createElement("h1", null, "Your Ensemble Closet")}
+            {React.createElement("p", null, "Here you have all of your outfits that you have saved. Imagine this to be your virtual closet!")}
+            <a className="backto right hvr-icon-wobble-horizontal" onClick={this.viewWizard}><i className="fa fa-arrow-left hvr-icon" aria-hidden="true"></i>Go back to Ensemble Maker</a>
+
+            <div className="closet" id="collections">
+              {items.map((item, i) =>
+                <div key={i} className="saved-outfit">
+                  <div className="saved-top">
+                    <img src={item.top} alt="top"></img>
+                  </div>
+
+                  <div className="saved-bottom">
+                    <img src={item.bottoms} alt="bottoms"></img>
+                  </div>
+
+                  <div className="saved-shoes">
+                    <img src={item.shoes} alt="shoes"></img>
+                  </div>
+                  <a key={item.id} onClick={this.deleteItem.bind(this, item.id)} className="remove hvr-shutter-in-vertical">
+                    <i className="fa fa-times" id="deleteitem" aria-hidden="true"></i> Remove from Closet</a>
+
+                </div>
+              )}
+            </div>
+
+          </div>
+        );
+      }
     }
   }
 }
