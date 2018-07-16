@@ -9,7 +9,7 @@ const images = [
     "images/bottoms/bottoms_000.png",
     "images/bottoms/bottoms_001.png",
     "images/bottoms/bottoms_002.jpg",
-    "images/bottoms/bottoms_003.jpg",
+    "images/bottoms/bottoms_003.png",
     "images/bottoms/bottoms_004.jpg",
     "images/bottoms/bottoms_005.png",
     "images/bottoms/bottoms_006.jpg",

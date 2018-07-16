@@ -215,7 +215,7 @@ class App extends Component {
           {React.createElement("h1", null, "Pick out your ensemble!")}
           {React.createElement("p", null, "Here you can scroll through your various articles of clothing and see what comes together best!")}
 
-          <a className="backto right hvr-icon-wobble-horizontal" onClick={() => this.viewCloset()}	><i className="fa fa-arrow-right hvr-icon" aria-hidden="true"></i>View Saved Collection</a>
+          <a className="backto right hvr-icon-wobble-horizontal" onClick={() => this.viewCloset()}	>View Saved Collection <i className="fa fa-arrow-right hvr-icon" aria-hidden="true"></i></a>
           <GetScrollOuterTops ref={this.top} />
           <GetScrollOuterBottoms ref={this.bottom} />
           <GetScrollOuterShoes ref={this.shoes} />
