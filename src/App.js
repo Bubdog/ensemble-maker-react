@@ -91,49 +91,6 @@ const I = _class => {
   return React.createElement("i", { className: _class, "aria-hidden": "true" }, null)
 }
 
-const A = (_href, _class, _text) => {
-  return React.createElement("a", { className: _class, href: _href }, _text, I("fa fa-arrow-right hvr-icon"))
-}
-
-const ShowEnsembles = () => {
-  var closet = JSON.parse(localStorage.getItem("SavedEnsembles"));
-  let collectionsDivText = "";
-  // this gets all the saved apparel but we aren't using this yet
-  var index;
-  var upper;
-  var lower;
-  var skids;
-  var outfitId;
-  for (index in closet.ensembles) {
-    upper = closet.ensembles[index].top;
-    lower = closet.ensembles[index].bottoms;
-    skids = closet.ensembles[index].shoes;
-    outfitId = closet.ensembles[index].id;
-
-    collectionsDivText += '<div class="saved-outfit">';
-
-    collectionsDivText += '<div class="saved-top">';
-    collectionsDivText += '<img src="' + upper + '" alt="top"></img>';
-    collectionsDivText += '</div>';
-
-    collectionsDivText += '<div class="saved-bottom">';
-    collectionsDivText += '<img src="' + lower + '" alt="bottom"></img>';
-    collectionsDivText += '</div>';
-
-    collectionsDivText += '<div class="saved-shoes">';
-    collectionsDivText += '<img src="' + skids + '" alt="shoes"></img>';
-    collectionsDivText += '</div>';
-
-    collectionsDivText += '<a  href="javascript:deleteOutfit(' + outfitId + ')" class="remove hvr-shutter-in-vertical"><i class="fa fa-times"  id="deleteOutfit" aria-hidden="true"></i> Remove from Closet</a>';
-
-    collectionsDivText += '</div>';
-  }
-  var i = 1; // this is just here to put a breakpoint
-  return collectionsDivText;
-
-
-};
-
 class App extends Component {
 
   constructor(props) {
