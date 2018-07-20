@@ -7,22 +7,22 @@ import "./css/font-awesome-4.7.0/css/font-awesome.min.css";
 // web client can't read from directories so we'll hard-code this
 const images = [
     "images/shoes/shoes_000.png",
-    "images/shoes/shoes_001.jpg",
-    "images/shoes/shoes_002.jpg",
+    "images/shoes/shoes_001.png",
+    "images/shoes/shoes_002.png",
     "images/shoes/shoes_003.png",
-    "images/shoes/shoes_004.jpg",
-    "images/shoes/shoes_005.jpg",
-    "images/shoes/shoes_006.jpg",
-    "images/shoes/shoes_007.jpg",
+    "images/shoes/shoes_004.png",
+    "images/shoes/shoes_005.png",
+    "images/shoes/shoes_006.png",
+    "images/shoes/shoes_007.png",
     "images/shoes/shoes_008.png",
-    "images/shoes/shoes_009.jpg",
-    "images/shoes/shoes_010.jpg",
-    "images/shoes/shoes_011.jpg",
-    "images/shoes/shoes_012.jpg",
-    "images/shoes/shoes_013.jpg",
-    "images/shoes/shoes_014.jpg",
-    "images/shoes/shoes_015.jpg",
-    "images/shoes/shoes_016.jpg"
+    "images/shoes/shoes_009.png",
+    "images/shoes/shoes_010.png",
+    "images/shoes/shoes_011.png",
+    "images/shoes/shoes_012.png",
+    "images/shoes/shoes_013.png",
+    "images/shoes/shoes_014.png",
+    "images/shoes/shoes_015.png",
+    "images/shoes/shoes_016.png"
 ]
 
 

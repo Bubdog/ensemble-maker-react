@@ -16,13 +16,13 @@ const images = [
     "images/tops/tops_007.png",
     "images/tops/tops_008.png",
     "images/tops/tops_009.png",
-    "images/tops/tops_010.jpg",
-    "images/tops/tops_011.jpg",
-    "images/tops/tops_012.jpg",
-    "images/tops/tops_013.jpg",
-    "images/tops/tops_014.jpg",
-    "images/tops/tops_015.jpg",
-    "images/tops/tops_016.jpg"
+    "images/tops/tops_010.png",
+    "images/tops/tops_011.png",
+    "images/tops/tops_012.png",
+    "images/tops/tops_013.png",
+    "images/tops/tops_014.png",
+    "images/tops/tops_015.png",
+    "images/tops/tops_016.png"
 ]
 
 class GetScrollOuterTops extends Component {

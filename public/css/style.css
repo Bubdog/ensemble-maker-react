@@ -249,15 +249,17 @@ a.remove {
 
 .closet {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     text-align: center;
     margin-top: 55px;
+    flex-wrap: row;
 }
 
 .saved-outfit {
     border: 2px solid;
     width: 25%;
     padding: 40px 30px;
+    margin-right: 40px;
 }
 
 i.fa.fa-times {

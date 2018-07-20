@@ -8,21 +8,21 @@ import "./css/font-awesome-4.7.0/css/font-awesome.min.css";
 const images = [
     "images/bottoms/bottoms_000.png",
     "images/bottoms/bottoms_001.png",
-    "images/bottoms/bottoms_002.jpg",
+    "images/bottoms/bottoms_002.png",
     "images/bottoms/bottoms_003.png",
-    "images/bottoms/bottoms_004.jpg",
+    "images/bottoms/bottoms_004.png",
     "images/bottoms/bottoms_005.png",
-    "images/bottoms/bottoms_006.jpg",
-    "images/bottoms/bottoms_007.jpg",
-    "images/bottoms/bottoms_008.jpg",
-    "images/bottoms/bottoms_009.jpg",
-    "images/bottoms/bottoms_010.jpg",
-    "images/bottoms/bottoms_011.jpg",
-    "images/bottoms/bottoms_012.jpg",
-    "images/bottoms/bottoms_013.jpg",
-    "images/bottoms/bottoms_014.jpg",
-    "images/bottoms/bottoms_015.jpg",
-    "images/bottoms/bottoms_016.jpg"
+    "images/bottoms/bottoms_006.png",
+    "images/bottoms/bottoms_007.png",
+    "images/bottoms/bottoms_008.png",
+    "images/bottoms/bottoms_009.png",
+    "images/bottoms/bottoms_010.png",
+    "images/bottoms/bottoms_011.png",
+    "images/bottoms/bottoms_012.png",
+    "images/bottoms/bottoms_013.png",
+    "images/bottoms/bottoms_014.png",
+    "images/bottoms/bottoms_015.png",
+    "images/bottoms/bottoms_016.png"
 ]
 
 
