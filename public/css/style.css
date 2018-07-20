@@ -18,6 +18,12 @@ h1{
     margin-bottom: 20px;
 }
 
+span.small {
+    text-align: center;
+    display: block;
+    margin-bottom: 50px;
+}
+
 p {
 	font-family: 'Crimson Text', serif;
 	font-size: 18px;
